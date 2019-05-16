@@ -6,11 +6,12 @@ public class PlayerController : PhysicsObject
 {
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
-    
+
+    private SpriteRenderer playerSprite;
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerSprite = gameObject.GetComponent<SpriteRenderer>();
     }
 
     protected override void ComputeVelocity()
@@ -31,6 +32,15 @@ public class PlayerController : PhysicsObject
             {
                 velocity.y = velocity.y * 0.5f;
             }
+        }
+
+        if (velocity.x > 0)
+        {
+            playerSprite.flipX = false;
+        }
+        else if (velocity.x < 0)
+        {
+            playerSprite.flipX = true;
         }
 
         targetVelocity = move * maxSpeed;

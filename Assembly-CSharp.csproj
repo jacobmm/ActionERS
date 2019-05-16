@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{7A299EE3-35D4-7022-0F55-F2001C5F1F3B}</ProjectGuid>
+    <ProjectGuid>{3E1821D6-7A60-D604-A0A9-F59B37F26004}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -53,136 +53,136 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\PhysicsObject.cs" />
-     <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PhysicsObject.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Entities.Properties">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Entities.Properties.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Jobs">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Jobs.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Jobs.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Jobs.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Entities.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Entities.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Entities.StaticTypeRegistry">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Entities.StaticTypeRegistry.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Entities.StaticTypeRegistry.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Collections">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Scenes.Hybrid">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Scenes.Hybrid.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Scenes.Hybrid.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Scenes.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Scenes.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Scenes.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Physics">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Physics.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Physics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Extensions">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Mathematics.Extensions.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Mathematics.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Burst">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Extensions.Hybrid">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Mathematics.Extensions.Hybrid.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Physics.Hybrid">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Physics.Hybrid.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Physics.Hybrid.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Entities.BuildUtils">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Entities.BuildUtils.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Entities.BuildUtils.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Entities.Hybrid">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Entities.Hybrid.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Properties">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Properties.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Physics.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Physics.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Physics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Entities">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Entities.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Properties.Reflection">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Properties.Reflection.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Properties.Reflection.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Transforms">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Transforms.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Transforms.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Transforms.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Burst.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Transforms.Hybrid">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/Unity.Transforms.Hybrid.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0a2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -359,16 +359,16 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0a2/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="System.Runtime.CompilerServices.Unsafe">
- <HintPath>C:/Users/Jacob/Documents/Action ERS/Library/PackageCache/com.unity.collections@0.0.9-preview.18/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+ <HintPath>C:/Users/Jacob/Documents/ActionERS/Library/PackageCache/com.unity.collections@0.0.9-preview.18/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0a2/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
