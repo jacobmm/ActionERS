@@ -6,8 +6,14 @@ public class PlayerController : PhysicsObject
 {
     public float maxSpeed = 7;
     public float jumpTakeOffSpeed = 7;
+    public GameObject lookDirection;
+    public GameObject slash;
+    public float attackDuration = 0.3f;
+    public float attackCooldown = 0.1f;
 
     private SpriteRenderer playerSprite;
+    private bool isAttacking = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +40,11 @@ public class PlayerController : PhysicsObject
             }
         }
 
+        targetVelocity = move * maxSpeed;
+    }
+
+    protected override void LookDirection()
+    {
         if (velocity.x > 0)
         {
             playerSprite.flipX = false;
@@ -42,7 +53,41 @@ public class PlayerController : PhysicsObject
         {
             playerSprite.flipX = true;
         }
+        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+        {
+            lookDirection.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal")) * 180 / Mathf.PI);
+        }
+        else if (playerSprite.flipX == true)
+        {
+            lookDirection.transform.eulerAngles = new Vector3(0, 0, 180);
+        }
+        else
+        {
+            lookDirection.transform.eulerAngles = new Vector3(0, 0, 0);
+        }
 
-        targetVelocity = move * maxSpeed;
+    }
+
+    protected override void Attack()
+    {
+        if (Input.GetButtonDown("Attack") && isAttacking == false)
+        {
+            isAttacking = true;
+            StartCoroutine(AttackAndCooldown());
+        }
+    }
+
+
+    IEnumerator AttackAndCooldown()
+    {
+        slash.SetActive(true);
+
+        yield return new WaitForSeconds(attackDuration);
+
+        slash.SetActive(false);
+
+        yield return new WaitForSeconds(attackCooldown);
+
+        isAttacking = false;
     }
 }
