@@ -10,14 +10,18 @@ public class PlayerController : PhysicsObject
     public GameObject slash;
     public float attackDuration = 0.3f;
     public float attackCooldown = 0.1f;
+    public float attackKnockback = 4;
 
+    private Vector2 slashDirection;
     private SpriteRenderer playerSprite;
     private bool isAttacking = false;
+    private Collider2D slashCollider;
 
     // Start is called before the first frame update
     void Start()
     {
         playerSprite = gameObject.GetComponent<SpriteRenderer>();
+        slashCollider = slash.GetComponent<BoxCollider2D>();
     }
 
     protected override void ComputeVelocity()
@@ -45,25 +49,30 @@ public class PlayerController : PhysicsObject
 
     protected override void LookDirection()
     {
-        if (velocity.x > 0)
+        if (Input.GetAxis("Horizontal") > 0)
         {
             playerSprite.flipX = false;
         }
-        else if (velocity.x < 0)
+        else if (Input.GetAxis("Horizontal") < 0)
         {
             playerSprite.flipX = true;
         }
-        if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+
+        if (isAttacking == false)
         {
-            lookDirection.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal")) * 180 / Mathf.PI);
-        }
-        else if (playerSprite.flipX == true)
-        {
-            lookDirection.transform.eulerAngles = new Vector3(0, 0, 180);
-        }
-        else
-        {
-            lookDirection.transform.eulerAngles = new Vector3(0, 0, 0);
+            if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0)
+            {
+                lookDirection.transform.eulerAngles = new Vector3(0, 0, Mathf.Atan2(Input.GetAxis("Vertical"), Input.GetAxis("Horizontal")) * 180 / Mathf.PI);
+            }
+            else if (playerSprite.flipX == true)
+            {
+                lookDirection.transform.eulerAngles = new Vector3(0, 0, 180);
+            }
+            else
+            {
+                lookDirection.transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            slashDirection = lookDirection.transform.eulerAngles;
         }
 
     }
@@ -77,6 +86,18 @@ public class PlayerController : PhysicsObject
         }
     }
 
+    public void AttackOverlap(Collider2D other)
+    {
+        if (other == gameObject.GetComponent<CapsuleCollider2D>())
+        {
+            print("player got hit");
+        }
+        else
+        {
+            velocity = -slashDirection * attackKnockback;
+            print("hit");
+        }
+    }
 
     IEnumerator AttackAndCooldown()
     {

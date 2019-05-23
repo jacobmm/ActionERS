@@ -952,12 +952,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20.69, y: 8.53}
   m_EdgeRadius: 0
---- !u!1 &1107592423 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1107592423, guid: 7c2909d23f01b3a4e81cbeb1e061a005,
-    type: 3}
-  m_PrefabInstance: {fileID: 8022552514568424390}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1174595358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,10 +1596,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4878466735874372160, guid: 7c2909d23f01b3a4e81cbeb1e061a005,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2765066524487793609, guid: 7c2909d23f01b3a4e81cbeb1e061a005,
         type: 3}
-      propertyPath: slash
-      value: 
-      objectReference: {fileID: 1107592423}
+      propertyPath: attackCooldown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5093443233258946473, guid: 7c2909d23f01b3a4e81cbeb1e061a005,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c2909d23f01b3a4e81cbeb1e061a005, type: 3}

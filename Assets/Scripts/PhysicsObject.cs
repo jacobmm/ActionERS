@@ -37,8 +37,8 @@ public class PhysicsObject : MonoBehaviour
     {
         targetVelocity = Vector2.zero;
         ComputeVelocity();
-        LookDirection();
         Attack();
+        LookDirection();
     }
    
     protected virtual void ComputeVelocity()
