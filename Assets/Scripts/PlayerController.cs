@@ -10,12 +10,13 @@ public class PlayerController : PhysicsObject
     public GameObject slash;
     public float attackDuration = 0.3f;
     public float attackCooldown = 0.1f;
-    public float attackKnockback = 4;
+    public float attackKnockback = 70;
 
-    private Vector2 slashDirection;
     private SpriteRenderer playerSprite;
     private bool isAttacking = false;
     private Collider2D slashCollider;
+    private bool hitGround = false;
+    private Vector2 slashDirection;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,13 @@ public class PlayerController : PhysicsObject
         }
 
         targetVelocity = move * maxSpeed;
+
+        if (hitGround == true)
+        {
+            velocity = -slashDirection * attackKnockback;
+            print(velocity);
+            hitGround = false;
+        }
     }
 
     protected override void LookDirection()
@@ -72,9 +80,15 @@ public class PlayerController : PhysicsObject
             {
                 lookDirection.transform.eulerAngles = new Vector3(0, 0, 0);
             }
-            slashDirection = lookDirection.transform.eulerAngles;
-        }
 
+            Vector3 direction = Vector3.right;
+
+            slashDirection = lookDirection.transform.TransformDirection(direction);
+
+            Vector2 position = lookDirection.transform.position;
+
+            Debug.DrawLine(position, position + slashDirection, Color.green);
+        }
     }
 
     protected override void Attack()
@@ -90,11 +104,11 @@ public class PlayerController : PhysicsObject
     {
         if (other == gameObject.GetComponent<CapsuleCollider2D>())
         {
-            print("player got hit");
+
         }
         else
         {
-            velocity = -slashDirection * attackKnockback;
+            hitGround = true;
             print("hit");
         }
     }
