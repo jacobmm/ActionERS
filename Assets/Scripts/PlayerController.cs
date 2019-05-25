@@ -10,7 +10,7 @@ public class PlayerController : PhysicsObject
     public GameObject slash;
     public float attackDuration = 0.3f;
     public float attackCooldown = 0.1f;
-    public float attackKnockback = 70;
+    public float attackKnockback = 8;
 
     private SpriteRenderer playerSprite;
     private bool isAttacking = false;
