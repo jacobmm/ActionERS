@@ -6,6 +6,6 @@ public class SlashTrigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        gameObject.GetComponentInParent<PlayerController>().AttackOverlap(other);   
+        gameObject.GetComponentInParent<PlayerController>().AttackOverlap(other);
     }
 }
